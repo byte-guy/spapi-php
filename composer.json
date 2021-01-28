@@ -9,7 +9,7 @@
      }
   ],
   "require": {
-    "guzzlehttp/guzzle": "^6.5|^7.0",
+    "guzzlehttp/guzzle": "^6.5 || ^7.0",
     "guzzlehttp/psr7": "^1.7",
     "patchwork/utf8": "~1.2",
     "ext-simplexml": "*",
