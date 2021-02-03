@@ -92,8 +92,8 @@ class Feeder
         $decryptedFile = ASECryptoStream::decrypt(file_get_contents($feedDownloadUrl), $key, $initializationVector);
         $decryptedFile = preg_replace('/\s+/S', " ", $decryptedFile);
 
-        $xml = simplexml_load_string($decryptedFile);
-        $json = json_encode($xml);
-        return json_decode($json, TRUE);
+        //$xml = simplexml_load_string($decryptedFile);
+        //$json = json_encode($xml);
+        return $decryptedFile;
     }
 }
